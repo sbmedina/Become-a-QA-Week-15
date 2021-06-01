@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js"
+    "test:login": "npx wdio run ./wdio.conf.js --spec ./test/specs/login.js",
+    "test:products": "npx wdio run ./wdio.conf.js --spec ./test/specs/products.js",
+    "test:cart": "npx wdio run ./wdio.conf.js --spec ./test/specs/cart.js",
+    "test:e2e": "npx wdio run ./wdio.conf.js --spec ./test/specs/e2e.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,7 @@
   "homepage": "https://github.com/sbmedina/Become-a-QA-Week-15#readme",
   "dependencies": {
     "@wdio/cli": "^7.5.7",
-    "@wdio/sync": "^7.5.7"
+    "@wdio/sync": "^7.6.1"
   },
   "devDependencies": {
     "@wdio/jasmine-framework": "^7.5.3",
